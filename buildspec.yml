@@ -13,6 +13,8 @@ phases:
       - echo Build completed on `date`
       - mkdir -p output
       - cp index.html output/
+      - echo Removing existing index.html from /var/www/html/
+      - rm -f /var/www/html/index.html
 
 artifacts:
   files:
